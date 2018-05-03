@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "DressStore": {
+    "dress-store": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/DressStore",
+            "outputPath": "dist/dress-store",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -54,18 +54,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "DressStore:build"
+            "browserTarget": "dress-store:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "DressStore:build:production"
+              "browserTarget": "dress-store:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "DressStore:build"
+            "browserTarget": "dress-store:build"
           }
         },
         "test": {
@@ -99,7 +99,7 @@
         }
       }
     },
-    "DressStore-e2e": {
+    "dress-store-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -107,7 +107,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "DressStore:serve"
+            "devServerTarget": "dress-store:serve"
           }
         },
         "lint": {
@@ -122,5 +122,5 @@
       }
     }
   },
-  "defaultProject": "DressStore"
+  "defaultProject": "dress-store"
 }
