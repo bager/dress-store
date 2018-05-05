@@ -1,0 +1,14 @@
+<div>
+  <label>
+    Color name:
+    <input type="text" #name>
+  </label>
+  <button (click)=addColor(name.value)>Add</button>
+
+  <ul>
+    <li *ngFor='let color of colors$ | async'>
+      {{color}}
+      <button (click)='removeColor(color)'>X</button>
+    </li>
+  </ul>
+</div>
